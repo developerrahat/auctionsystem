@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuctionSystem | ------------------</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="shortcut icon" href="./assets/images/facicon.png" type="image/x-icon">
+
+  <!-- /---------- Css Linkup Here----------/ -->
+  <link rel="stylesheet" href="./assets/vendors/css/lightslider.css">
+  <link rel="stylesheet" href="./assets/vendors/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/vendors/css/animate.css">
+  <link rel="stylesheet" href="./assets/vendors/css/admin-dashboard.css">
+  <link rel="stylesheet" href="./assets/vendors/css/main_style.css">
+  <link rel="stylesheet" href="./assets/vendors/css/responsive.css">
+
+</head>
+
+<body>
+
+
+<!---------------- Home Page Main Content Area Start--------------->
+
+
+
+
+<!-- ============= Header Area Html Code Start ================ -->
+<header class="main_header scroll-header">
+	<div class="container">
+		<div class="row-wrap">
+			<div class="header_logo">
+				<a href="index.html">
+         <h1>Auction<span>S</span>ystem</h1>
+        </a>
+			</div>
+      <div class="login_signup_menu">
+        <ul class="list-unstyled mb-0">
+          <li class="list-inline-item"><a href="#">My Account</a></li>
+          <li class="list-inline-item"><a href="#">Sign Out</a></li>
+        </ul>
+      </div>
+		</div>
+	</div>
+</header>
+<div class="overlay"></div>
+<!-- ============= Header Area Html Code End ================ -->
+
+
+<!-- ------------ Admin Dashboard Html Code Start ------------ -->
+
+<section class="admin_dashboard_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="left_sidebar_menu_wrapper_admin_dashboard">
+          <ul class="sidebar-menu">
+            <li><span class="nav-section-title">Summary</span></li>
+            <li class="have-children"><a href="#"><span></span>Exhibitions</a>
+              <ul class="list-unstyled">
+                <li><a href="#">Add Exhibition</a></li>
+                <li><a href="#">View Exhibitions</a></li>
+              </ul>
+            </li>
+            <li class="have-children"><a href="#"><span></span>Category</a>
+              <ul class="list-unstyled">
+                <li><a href="#">Add Category</a></li>
+                <li><a href="#">View Categories</a></li>
+              </ul>
+            </li>
+            <li class="have-children"><a href="#"><span></span>Award</a>
+              <ul class="list-unstyled">
+                <li><a href="#">Add Award</a></li>
+                <li><a href="#">View Awards</a></li>
+              </ul>
+            </li>
+            <li class="have-children"><a href="#"><span></span>Jury</a>
+              <ul class="list-unstyled">
+                <li><a href="#">Add Jury</a></li>
+                <li><a href="#">View Juries</a></li>
+              </ul>
+            </li>
+            <li class="have-children"><a href="#"><span></span>Author</a>
+              <ul class="list-unstyled">
+                <li><a href="#">Add Author</a></li>
+                <li><a href="#">View Authors</a></li>
+              </ul>
+            </li>
+            <li class="have-children"><a href="#"><span></span>Reports</a>
+              <ul class="list-unstyled">
+                <li><a href="#">View Judging points</a></li>
+                <li><a href="#">Create Acceptances List</a></li>
+                <li><a href="#">Create Awarded List</a></li>
+                <li><a href="#">View Candidates for Awards</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span></span>Messages</a></li>
+            <li><a href="#"><span></span>Configuration</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="admin_dashboard_right_content_wrapper">
+          <div class="ad_ds_rc_title_breadcumb">
+            <ul class="list-unstyled">
+              <li class="list-inline-item"><a href="#">Reports <span>></span></a></li>
+              <li class="list-inline-item">Listing Fees Revinue</li>
+            </ul>
+          </div>
+
+          <div class="ad_ds_rc_filter_btns_wrapper d-flex justify-content-between">
+            <div class="ad_ds_rc_filter_btns d-flex">
+              <button class="filter_btns_for_admin">Apply Filter</button>
+              <button class="filter_btns_for_admin">Reset Filter</button>
+              <button class="filter_btns_for_admin">Status</button>
+              <div class="status_input_select">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>All</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <button class="filter_btns_for_admin">Export CSV</button>
+  
+            </div>
+
+            <div class="right_aaa_btn3_wrapper d-flex">
+              <button class="right_aaa_btn3 aaa3_font_size1">A</button>
+              <button class="right_aaa_btn3 aaa3_font_size2">A</button>
+              <button class="right_aaa_btn3">A</button>
+            </div>
+
+
+          </div>
+
+          <div class="admin_dashboard_input_fields">
+            <div class="admin_d_input_field_wrapper">
+              <form>
+                <div class="form-row-wrapper row g-1">
+                  <div class="form-group custom_from_group col-md-4 col-lg-4 col-xl-3">
+                    <label for="input_textDate">Date</label>
+                    <input type="text" class="form-control" id="input_textDate">
+                  </div>
+                  <div class="form-group custom_from_group col-md-4 col-lg-4 col-xl-2">
+                    <label for="input_textUsername">username</label>
+                    <input type="text" class="form-control" id="input_textUsername">
+                  </div>
+                  <div class="form-group custom_from_group col-md-4 col-lg-4 col-xl-2">
+                    <label for="input_textFirstName">First Name</label>
+                    <input type="text" class="form-control" id="input_textFirstName">
+                  </div>
+                  <div class="form-group custom_from_group col-md-6 col-lg-6 col-xl-2">
+                    <label for="input_textLastName">Last Name</label>
+                    <input type="text" class="form-control" id="input_textLastName">
+                  </div>
+                  <div class="form-group custom_from_group col-md-6 col-lg-6 col-xl-3">
+                    <label for="input_textEmail">Emaile</label>
+                    <input type="email" class="form-control" id="input_textEmail">
+                  </div>
+
+                </div>
+                
+              </form>
+
+
+            </div>
+
+            <div class="admin_d_input_field_wrapper">
+              <form>
+                <div class="form-row-wrapper row g-1">
+                  <div class="form-group custom_from_group col-md-4 col-lg-4 col-xl-3">
+                    <label for="listingId">Listing ID</label>
+                    <input type="text" class="form-control" id="listingId">
+                  </div>
+                  <div class="form-group custom_from_group col-md-4 col-lg-4 col-xl-2">
+                    <label for="description">Description</label>
+                    <input type="text" class="form-control" id="description">
+                  </div>
+                  <div class="form-group custom_from_group col-md-4 col-lg-4 col-xl-2">
+                    <label for="amount">Amount</label>
+                    <input type="text" class="form-control" id="amount">
+                  </div>
+                  <div class="form-group custom_from_group col-md-6 col-lg-6 col-xl-2">
+                    <label for="invoiceId">Invoice ID</label>
+                    <input type="text" class="form-control" id="invoiceId">
+                  </div>
+                  <div class="form-group custom_from_group col-md-6 col-lg-6 col-xl-3">
+                    <label for="paid">Paid</label>
+                    <input type="email" class="form-control" id="paid">
+                  </div>
+
+                </div>
+                
+              </form>
+
+
+            </div>
+            <div class="admin_d_input_field_wrapper_footer">
+              <div class="row">
+                <div class="col-lg-4 col-xl-3">
+                  <div class="admin_d_input_field_wrapper_footer_title">
+                    <h6>01/27/2024</h6>
+                    <a href="#">271708</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xl-2">
+                  <div class="admin_d_input_field_wrapper_footer_title">
+                    <a href="#">AutoImport</a>
+                    <a href="#">Hyundai Sanata 2024</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xl-2">
+                  <div class="admin_d_input_field_wrapper_footer_title">
+                    <h6>Johann</h6>
+                    <a href="#">$165.03</a>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-2">
+                  <div class="admin_d_input_field_wrapper_footer_title">
+                    <h6>Luis</h6>
+                    <a href="#">271708</a>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                  <div class="admin_d_input_field_wrapper_footer_title">
+                    <a href="#">text@gmail.com</a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination_wrapper my-4">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Total Price Wrapper -->
+            <div class="total_price_wrapper text-end">
+              <h6 class="mb-0">Total: $787.03</h6>
+            </div>
+
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ------------ Admin Dashboard Html Code Start ------------ -->
+
+
+
+
+
+<!-- =========== Footer Area Html Code Start ========== -->
+
+<footer class="our_footer">
+  <div class="footer_bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg">
+          <div class="footer_copyright">
+            <p class="mb-0">&copy; Copyright 2024 AuctionSystem. All right reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- =========== Footer Area Html Code Start ========== -->
+
+
+
+
+
+
+
+  <!---------------- Home Page Main Content Area End--------------->
+
+
+
+
+
+
+  <!-- /----------- JavaScript Linkup Here-------------/ -->
+<script src="./assets/vendors/js/jquery.min.js"></script>
+<script src="./assets/vendors/js/bootstrap.min.js"></script>
+<script src="./assets/vendors/js/bootstrap.bundle.js"></script>
+<script src="./assets/vendors/js/popper.min.js"></script>
+
+  <!-- /----------- Plugins File Linkup Here-----------/ -->
+  <script src="./assets/vendors/js/animate.js"></script>
+  <script src="./assets/vendors/js/lightslider.js"></script>
+  <script src="./assets/vendors/js/custom.js"></script>
+</body>
+
+</html>

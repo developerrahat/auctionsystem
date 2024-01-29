@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuctionSystem | ------------------</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="shortcut icon" href="" type="image/x-icon">
+
+  <!-- /---------- Css Linkup Here----------/ -->
+  <link rel="stylesheet" href="./assets/vendors/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/vendors/css/animate.css">
+  <link rel="stylesheet" href="./assets/vendors/css/text-editor.css">
+  <link rel="stylesheet" href="./assets/vendors/css/main_style.css">
+  <link rel="stylesheet" href="./assets/vendors/css/responsive.css">
+
+</head>
+
+<body>
+
+
+<!---------------- Home Page Main Content Area Start--------------->
+
+
+
+
+<!-- ============= Header Area Html Code Start ================ -->
+<header class="main_header scroll-header">
+	<div class="container">
+		<div class="row-wrap">
+			<div class="header_logo">
+				<a href="index.html">
+         <h1>Auction<span>S</span>ystem</h1>
+        </a>
+			</div>
+			<div class="nav-wrap">
+				<ul class="nav-list list-unstyled mb-0">
+					<li class=""><a class="" href="index.html">Home</a></li>
+					<li><a href="category.html">Category</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+          <div class="header_searchbar">
+            <div id="search-wrapper">
+              <i class="search-icon fas fa-search"></i>
+              <input type="text" id="search" placeholder="Search something here...">
+              <button id="search-button">Search</button>
+            </div>
+          </div>
+				</ul>
+			</div>
+      
+      <div class="login_signup_menu">
+        <ul class="list-unstyled mb-0">
+          <li class="list-inline-item"><a href="#">Login</a></li>
+          <li class="list-inline-item"><a href="#">Sign Up</a></li>
+        </ul>
+      </div>
+
+
+
+
+
+
+
+			<div class="h_hamburger">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="overlay"></div>
+<!-- ============= Header Area Html Code End ================ -->
+
+
+<!-- ============= Banner Html Code Start ============ -->
+<section class="banner_section">
+  <div class="container">
+    <div class="row ">
+      <div class="col-lg-8">
+        <div class="hero_title_main_wrap">
+          <div class="hero_content_wrapper">
+            <h1>Discover The Thrill of Auctions!</h1>
+            <h4>Find Unbelievale Deals on Your Favourite Items!</h4>
+            <p>Join our dynamic online  auction platform and experience the excitement of bidding!</p>
+
+            <div class="sub-main">
+              <a href="#" class="button-two"><span>Explore Now</span></a>
+            </div>
+
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============= Banner Html Code End ============ -->
+
+
+<!-- ========== Product Category Menu & Product Items ============ -->
+<section class="category_with_products">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-lg-4">
+        <div class="category_regions_main_wrapper">
+                  <!-- Category -->
+        <div class="p_category_wrapper">
+          <h4>Categories</h4>
+          <div class="category_menu_items d-flex justify-content-between">
+            <a href="#">Smartphones & Laptops</a>
+            <span>6</span>
+          </div>
+          <div class="category_menu_items d-flex justify-content-between">
+            <a href="#">Art</a>
+            <span>0</span>
+          </div>
+          <div class="category_menu_items d-flex justify-content-between">
+            <a href="#">Antiques</a>
+            <span>2</span>
+          </div>
+          <div class="category_menu_items d-flex justify-content-between">
+            <a href="#">Automotive</a>
+            <span>1</span>
+          </div>
+          <div class="category_menu_items d-flex justify-content-between">
+            <a href="#">Baby</a>
+            <span>6</span>
+          </div>
+          <div class="category_menu_items d-flex justify-content-between">
+            <a href="#">Books</a>
+            <span>50</span>
+          </div>
+          <div class="category_menu_items d-flex justify-content-between">
+            <a href="#">Business & Industrial</a>
+            <span>0</span>
+          </div>
+          <div class="category_menu_items d-flex justify-content-between">
+            <a href="#">Cameras & Photo</a>
+            <span>0</span>
+          </div>
+          <div class="category_menu_items d-flex justify-content-between">
+            <a href="#">Cell Phone & PDAs</a>
+            <span>0</span>
+          </div>
+          <div class="category_menu_items d-flex justify-content-between">
+            <a href="#">Clothing & Shoes</a>
+            <span>2</span>
+          </div>
+        </div>
+        <!-- Regions -->
+        <div class="p_category_wrapper">
+          <h4>Regions</h4>
+          <div class="category_menu_items d-flex justify-content-between">
+            <a href="#">Dominican Republic</a>
+            <span>1</span>
+          </div>
+          <div class="category_menu_items d-flex justify-content-between">
+            <a href="#">United States</a>
+            <span>5</span>
+          </div>
+          <div class="category_menu_items d-flex justify-content-between">
+            <a href="#">Canada</a>
+            <span>3</span>
+          </div>
+
+
+        </div>
+        </div>
+
+      </div>
+      <div class="col-md-8 col-lg-8">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+            <a href="single-product.html">
+              <div class="product_single_item">
+                <div class="ps_img mb-3">
+                  <img src="./assets/vendors/images/iphone.png" alt="product">
+                </div>
+                <div class="ps_title">
+                  <h4>1 Bid(1)</h4>
+                  <h1>IPhone 15 Pro Max</h1>
+                </div>
+                <div class="ps_prices_wrapper d-flex justify-content-between">
+                  <div class="p_price">
+                    <h4>Current Bid</h4>
+                    <h1>$2,000.00</h1>
+                  </div>
+                  <div class="time_remining">
+                    <h4>Time Remaining</h4>
+                  </div>
+                  
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+            <a href="single-product.html">
+              <div class="product_single_item">
+                <div class="ps_img mb-3">
+                  <img src="./assets/vendors/images/iphone2.png" alt="product">
+                </div>
+                <div class="ps_title">
+                  <h4>1 Bid(1)</h4>
+                  <h1>IPhone 15 Pro Max</h1>
+                </div>
+                <div class="ps_prices_wrapper d-flex justify-content-between">
+                  <div class="p_price">
+                    <h4>Current Bid</h4>
+                    <h1>$2,000.00</h1>
+                  </div>
+                  <div class="time_remining">
+                    <h4>Time Remaining</h4>
+                  </div>
+                  
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+            <a href="single-product.html">
+              <div class="product_single_item">
+                <div class="ps_img mb-3">
+                  <img src="./assets/vendors/images/p3.webp" alt="product">
+                </div>
+                <div class="ps_title">
+                  <h4>1 Bid(1)</h4>
+                  <h1>IPhone 15 Pro Max</h1>
+                </div>
+                <div class="ps_prices_wrapper d-flex justify-content-between">
+                  <div class="p_price">
+                    <h4>Current Bid</h4>
+                    <h1>$2,000.00</h1>
+                  </div>
+                  <div class="time_remining">
+                    <h4>Time Remaining</h4>
+                  </div>
+                  
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+            <a href="single-product.html">
+              <div class="product_single_item">
+                <div class="ps_img mb-3">
+                  <img src="./assets/vendors/images/p4.jpeg" alt="product">
+                </div>
+                <div class="ps_title">
+                  <h4>1 Bid(1)</h4>
+                  <h1>IPhone 15 Pro Max</h1>
+                </div>
+                <div class="ps_prices_wrapper d-flex justify-content-between">
+                  <div class="p_price">
+                    <h4>Current Bid</h4>
+                    <h1>$2,000.00</h1>
+                  </div>
+                  <div class="time_remining">
+                    <h4>Time Remaining</h4>
+                  </div>
+                  
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+            <a href="single-product.html">
+              <div class="product_single_item">
+                <div class="ps_img mb-3">
+                  <img src="./assets/vendors/images/iphone.png" alt="product">
+                </div>
+                <div class="ps_title">
+                  <h4>1 Bid(1)</h4>
+                  <h1>IPhone 15 Pro Max</h1>
+                </div>
+                <div class="ps_prices_wrapper d-flex justify-content-between">
+                  <div class="p_price">
+                    <h4>Current Bid</h4>
+                    <h1>$2,000.00</h1>
+                  </div>
+                  <div class="time_remining">
+                    <h4>Time Remaining</h4>
+                  </div>
+                  
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+            <a href="single-product.html">
+              <div class="product_single_item">
+                <div class="ps_img mb-3">
+                  <img src="./assets/vendors/images/iphone.png" alt="product">
+                </div>
+                <div class="ps_title">
+                  <h4>1 Bid(1)</h4>
+                  <h1>IPhone 15 Pro Max</h1>
+                </div>
+                <div class="ps_prices_wrapper d-flex justify-content-between">
+                  <div class="p_price">
+                    <h4>Current Bid</h4>
+                    <h1>$2,000.00</h1>
+                  </div>
+                  <div class="time_remining">
+                    <h4>Time Remaining</h4>
+                  </div>
+                  
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+            <a href="single-product.html">
+              <div class="product_single_item">
+                <div class="ps_img mb-3">
+                  <img src="./assets/vendors/images/iphone.png" alt="product">
+                </div>
+                <div class="ps_title">
+                  <h4>1 Bid(1)</h4>
+                  <h1>IPhone 15 Pro Max</h1>
+                </div>
+                <div class="ps_prices_wrapper d-flex justify-content-between">
+                  <div class="p_price">
+                    <h4>Current Bid</h4>
+                    <h1>$2,000.00</h1>
+                  </div>
+                  <div class="time_remining">
+                    <h4>Time Remaining</h4>
+                  </div>
+                  
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+            <a href="single-product.html">
+              <div class="product_single_item">
+                <div class="ps_img mb-3">
+                  <img src="./assets/vendors/images/iphone.png" alt="product">
+                </div>
+                <div class="ps_title">
+                  <h4>1 Bid(1)</h4>
+                  <h1>IPhone 15 Pro Max</h1>
+                </div>
+                <div class="ps_prices_wrapper d-flex justify-content-between">
+                  <div class="p_price">
+                    <h4>Current Bid</h4>
+                    <h1>$2,000.00</h1>
+                  </div>
+                  <div class="time_remining">
+                    <h4>Time Remaining</h4>
+                  </div>
+                  
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+            <a href="single-product.html">
+              <div class="product_single_item">
+                <div class="ps_img mb-3">
+                  <img src="./assets/vendors/images/iphone.png" alt="product">
+                </div>
+                <div class="ps_title">
+                  <h4>1 Bid(1)</h4>
+                  <h1>IPhone 15 Pro Max</h1>
+                </div>
+                <div class="ps_prices_wrapper d-flex justify-content-between">
+                  <div class="p_price">
+                    <h4>Current Bid</h4>
+                    <h1>$2,000.00</h1>
+                  </div>
+                  <div class="time_remining">
+                    <h4>Time Remaining</h4>
+                  </div>
+                  
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ========== Product Category Menu & Product Items ============ -->
+
+
+<!-- =========== Footer Area Html Code Start ========== -->
+
+<footer class="our_footer">
+  <div class="footer_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="footer_title">
+            <h4>Buy</h4>
+          </div>
+          <div class="footer_menu">
+            <ul class="list-unstyled">
+              <li><a href="#">Registration</a></li>
+              <li><a href="#">Bidding & Buying Help</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="footer_title">
+            <h4>Sell</h4>
+          </div>
+          <div class="footer_menu">
+            <ul class="list-unstyled">
+              <li><a href="#">Start Selling</a></li>
+              <li><a href="#">How to Sell</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="footer_title">
+            <h4>Stay Connected</h4>
+          </div>
+          <div class="footer_menu">
+            <ul class="list-unstyled">
+              <li><a href="#"><span><i class="fa-brands fa-facebook"></i></span> Facebook</a></li>
+              <li><a href="#"><span><i class="fa-brands fa-twitter"></i></span> Twitter</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="footer_title">
+            <h4>Help & Contact</h4>
+          </div>
+          <div class="footer_menu">
+            <ul class="list-unstyled">
+              <li><a href="#">Seller Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">eBay Returns</a></li>
+              <li><a href="#">eBay Moneybag Guarantee</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer_bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg">
+          <div class="footer_copyright text-center">
+            <p class="mb-0">&copy; Copyright 2024 AuctionSystem. All right reserved. 
+              <a href="#">Accessibility,</a>
+              <a href="#">User Agreements,</a>
+              <a href="#">Privacy,</a>
+              <a href="#">Payments Terms of Use,</a>
+              <a href="#">Cookies,</a>
+              <a href="#">Your Privacy Choise</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- =========== Footer Area Html Code Start ========== -->
+
+
+
+
+
+
+  <!---------------- Home Page Main Content Area End--------------->
+
+
+
+  <!-- /----------- JavaScript Linkup Here-------------/ -->
+<script src="./assets/vendors/js/jquery.min.js"></script>
+<script src="./assets/vendors/js/bootstrap.min.js"></script>
+<script src="./assets/vendors/js/bootstrap.bundle.js"></script>
+<script src="./assets/vendors/js/popper.min.js"></script>
+
+  <!-- /----------- Plugins File Linkup Here-----------/ -->
+  <script src="./assets/vendors/js/animate.js"></script>
+  <script src="tinymce/tinymce.min.js"></script>
+  <script src="text_editor.js"></script>
+  <script src="./assets/vendors/js/custom.js"></script>
+</body>
+
+</html>

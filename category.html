@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuctionSystem | ------------------</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="shortcut icon" href="./assets/images/facicon.png" type="image/x-icon">
+
+  <!-- /---------- Css Linkup Here----------/ -->
+  <link rel="stylesheet" href="./assets/vendors/css/lightslider.css">
+  <link rel="stylesheet" href="./assets/vendors/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/vendors/css/animate.css">
+  <link rel="stylesheet" href="./assets/vendors/css/main_style.css">
+  <link rel="stylesheet" href="./assets/vendors/css/responsive.css">
+
+</head>
+
+<body>
+
+
+<!---------------- Home Page Main Content Area Start--------------->
+
+
+
+
+<!-- ============= Header Area Html Code Start ================ -->
+<header class="main_header scroll-header">
+	<div class="container">
+		<div class="row-wrap">
+			<div class="header_logo">
+				<a href="index.html">
+         <h1>Auction<span>S</span>ystem</h1>
+        </a>
+			</div>
+			<div class="nav-wrap">
+				<ul class="nav-list list-unstyled mb-0">
+					<li class=""><a class="" href="index.html">Home</a></li>
+					<li><a href="category.html">Category</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+          <div class="header_searchbar">
+            <div id="search-wrapper">
+              <i class="search-icon fas fa-search"></i>
+              <input type="text" id="search" placeholder="Search something here...">
+              <button id="search-button">Search</button>
+            </div>
+          </div>
+				</ul>
+			</div>
+      
+      <div class="login_signup_menu">
+        <ul class="list-unstyled mb-0">
+          <li class="list-inline-item"><a href="#">Login</a></li>
+          <li class="list-inline-item"><a href="#">Sign Up</a></li>
+        </ul>
+      </div>
+
+
+
+
+
+
+
+			<div class="h_hamburger">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="overlay"></div>
+<!-- ============= Header Area Html Code End ================ -->
+
+
+<!-- ------------ Create Listing Page Html Code Start ------------ -->
+
+<section class="create_listing_form">
+  <div class="container">
+    <div class="row">
+      <form action="#" method="POST" class="form">
+        <div class="steps">
+          <ul class="step-tab-items ps-0">
+            <li class="step-item active">01</li>
+            <li class="step-item">02</li>
+          </ul>
+          <div class="step-tabs">
+            <div class="step-tab active" id="step-01">
+              <div class="creating_listing_form_title_wrapper d-flex justify-content-between">
+                <h4 class="form-title-sc">Create Listing - Step 1 of 2</h4>
+                <h4 class="form-title-sc">All fields marked with " <span>*</span> " are required</h4>
+              </div>
+
+              <div class="category_listing_lists mt-4">
+                <div class="ct_l_heading">
+                  <h4>Category<span>*</span></h4>
+                </div>
+                <div class="approveTermsContainer">
+                  <div class="newItems">
+                    <ul class="listbox ps-0 ms-0" data-selectbox="" tabindex="-1">
+                      <li class="listitem"><a class="listitem-target">Apples</a></li>
+                      <li class="listitem"><a class="listitem-target">Oranges</a></li>
+                      <li class="listitem is-selected"><a class="listitem-target">Bananas</a></li>
+                      <li class="listitem"><a class="listitem-target">Grapes</a></li>
+                      <li class="listitem"><a class="listitem-target">Pears</a></li>
+                      <li class="listitem"><a class="listitem-target">Strawberries</a>
+                      <li class="listitem"><a class="listitem-target">Peach</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="category_listing_lists mt-4">
+                <div class="ct_l_heading">
+                  <h4>Listing Type<span>*</span></h4>
+                </div>
+                <div class="slf_input">
+                  <select class="form-select slf_form_control" aria-label=".form-select-sm example">
+                    <option selected>Select Category First</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>      
+
+              </div>
+
+              <div class="category_listing_lists mt-4">
+                <div class="ct_l_heading">
+                  <h4>Regions<span>*</span></h4>
+                </div>
+                <div class="approveTermsContainer">
+                  <div class="newItems">
+                    <ul class="listbox ps-0 ms-0" data-selectbox="" tabindex="-1">
+                      <li class="listitem is-selected"><a class="listitem-target">Dominican Republic</a></li>
+                      <li class="listitem"><a class="listitem-target">Canada</a></li>
+                      <li class="listitem"><a class="listitem-target">United State</a></li>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="default_btn_bg_white_wrapper  mt-4 text-end">
+                    <button class="button_bg_white_dflt">Reset</button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="form-submit mt-4">
+                <button class="form-btn" type="button" tab-target="step-02">Next</button>
+              </div>
+
+            </div>
+
+
+            <!-- Form Step 2 of 2 -->
+            <div class="step-tab" id="step-02">
+              <div class="creating_listing_form_title_wrapper d-flex justify-content-between">
+                <h4 class="form-title-sc">Create Listing - Step 2 of 2 (Auction)</h4>
+                <h4 class="form-title-sc">All fields marked with " <span>*</span> " are required</h4>
+              </div>
+              <div class="creating_listing_form_title_wrapper mt-4">
+                <h4 class="form-title-sc">Category > Automotive > Hyundai > Sonata</h4>
+              </div>
+
+              <div class="standard_listing_fields mt-4">
+                <h4>Standard Listing Fields</h4>
+                <div class="slf_wrapper_width ms-auto">
+                  <div class="sl_fields_wrapper d-flex align-items-center">
+                    <div class="slf_title">
+                      <h1>Title <span>*</span></h1>
+                    </div>
+                    <div class="slf_input">
+                      <input type="text" class="slf_form_control slf_form_controlpl-0">
+                    </div>
+                  </div>
+                  <div class="sl_fields_wrapper d-flex align-items-center">
+                    <div class="slf_title">
+                      <h1>Sub Title</h1>
+                    </div>
+                    <div class="slf_input">
+                      <input type="text" class="slf_form_control slf_form_controlpl-0">
+                    </div>
+                  </div>
+                  <div class="sl_fields_wrapper d-flex align-items-center">
+                    <div class="slf_title">
+                      <h1>Description<span>*</span></h1>
+                    </div>
+                    <div class="slf_input">
+                      <!-- Text Editor -->
+
+                      <form action="" method="post">
+                        <textarea name="textarea" id="default"  ></textarea>
+                      </form>
+                      
+
+
+                      <!-- Text Editor -->
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- listing fields -->
+              <div class="standard_listing_fields mt-4">
+                <h4>Listing Fields</h4>
+                <div class="slf_wrapper_width m-auto">
+                  <div class="sl_fields_wrapper d-flex align-items-center">
+                    <div class="slf_title">
+                      <h1>Starting Bids <span>*</span></h1>
+                    </div>
+                    <div class="slf_input">
+                      <span class="input_icon">$</span>
+                      <input type="number" class="slf_form_control">
+                    </div>
+                  </div>
+                  <div class="sl_fields_wrapper d-flex align-items-center">
+                    <div class="slf_title">
+                      <h1>Reserve Price</h1>
+                    </div>
+                    <div class="slf_input">
+                      <span class="input_icon">$</span>
+                      <input type="number" class="slf_form_control">
+                    </div>
+                  </div>
+                  <div class="sl_fields_wrapper d-flex align-items-center">
+                    <div class="slf_title">
+                      <h1>Buy Now Priced<span>*</span></h1>
+                    </div>
+                    <div class="slf_input">
+                      <span class="input_icon">$</span>
+                      <input type="number" class="slf_form_control">
+                    </div>
+                  </div>
+                  <div class="sl_fields_wrapper d-flex align-items-center">
+                    <div class="slf_title">
+                    </div>
+                    <div class="slf_input">
+                      <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate">
+                          Accept Offer ?
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+              <!-- add images -->
+              <div class="standard_listing_fields mt-4">
+                <h4>Add Images (Max 20)</h4>
+                <div class="slf_wrapper_width">
+                  <div class="sl_fields_wrapper">
+                    <div class="upload__box">
+                      <div class="upload__btn-box">
+                        <label class="upload__btn">
+                          <span>Add Images(s)</span>
+                          <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                        </label>
+                      </div>
+                      <div class="upload__img-wrap"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Shipping -->
+              <div class="standard_listing_fields mt-4">
+                <h4>Shipping</h4>
+                <div class="slf_wrapper_width">
+                  <div class="sl_fields_wrapper">
+                    <div class="row g-1">
+                      <div class="col-lg-2">
+                        <div class="slf_input">
+                          <select class="form-select slf_form_control slf_form_controlpl-0" aria-label="Default select example">
+                            <option selected disabled>Pickup</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="slf_input">
+                          <span class="input_icon">$</span>
+                          <input type="number" class="slf_form_control" placeholder="Cost">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="slf_input">
+                          <span class="input_icon">$</span>
+                          <input type="number" class="slf_form_control" placeholder="Additional Cost">
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <button class="shipping_add_btn">Add</button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Start & Duration -->
+              <div class="standard_listing_fields mt-4">
+                <h4>Start and Duration</h4>
+                <div class="slf_wrapper_width">
+
+                  <div class="sl_fields_wrapper d-flex align-items-center">
+                    <div class="slf_title">
+                      <h1>Date/Time</h1>
+                    </div>
+                    <div class="slf_input">
+                      <div class="br-datetimepicker" data-mode="single" data-type="datetime-local">
+                        <div class="br-input has-icon">
+                          <input id="dateandtime-input" class="slf_form_control slf_form_controlpl-0" type="datetime-local" placeholder="dd/mm/aaaa hh:mm" data-input="data-input"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slf_input">
+                      <input type="time" class="slf_form_control slf_form_controlpl-0" placeholder="Time">
+                    </div>
+                    <div class="slf_input">
+                      <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                  </div>
+
+                  <div class="sl_fields_wrapper d-flex align-items-center">
+                    <div class="slf_title">
+                      <h1>Duration <span>*</span></h1>
+                    </div>
+                    <div class="slf_input">
+                      <select class="form-select slf_form_control slf_form_controlpl-0" aria-label="Default select example">
+                        <option selected disabled>Select A Value</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+              </div>
+      
+              <div class="creating_listing_form_title_wrapper mt-4">
+                <h4 class="form-title-sc">Additional Fees</h4>
+              </div>
+              <div class="creating_listing_form_title_wrapper">
+                <h4 class="form-title-sc">Post Listing Fee: $0.90</h4>
+              </div>
+              <div class="form-submit grid-2 mt-4">
+                <button type="button" class="button_bg_white_dflt text-primary" tab-target="step-01"><span><i class="fa-solid fa-angle-left"></i></span> Back</button>
+                <button type="button" class="button_bg_white_dflt">Save Draft</button>
+                <button type="submit" class="form-btn">Create Listing</button>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ------------ Create Listing Page Html Code Start ------------ -->
+
+
+
+
+
+<!-- =========== Footer Area Html Code Start ========== -->
+
+<footer class="our_footer">
+  <div class="footer_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="footer_title">
+            <h4>Buy</h4>
+          </div>
+          <div class="footer_menu">
+            <ul class="list-unstyled">
+              <li><a href="#">Registration</a></li>
+              <li><a href="#">Bidding & Buying Help</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="footer_title">
+            <h4>Sell</h4>
+          </div>
+          <div class="footer_menu">
+            <ul class="list-unstyled">
+              <li><a href="#">Start Selling</a></li>
+              <li><a href="#">How to Sell</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="footer_title">
+            <h4>Stay Connected</h4>
+          </div>
+          <div class="footer_menu">
+            <ul class="list-unstyled">
+              <li><a href="#"><span><i class="fa-brands fa-facebook"></i></span> Facebook</a></li>
+              <li><a href="#"><span><i class="fa-brands fa-twitter"></i></span> Twitter</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="footer_title">
+            <h4>Help & Contact</h4>
+          </div>
+          <div class="footer_menu">
+            <ul class="list-unstyled">
+              <li><a href="#">Seller Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">eBay Returns</a></li>
+              <li><a href="#">eBay Moneybag Guarantee</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer_bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg">
+          <div class="footer_copyright text-center">
+            <p class="mb-0">&copy; Copyright 2024 AuctionSystem. All right reserved. 
+              <a href="#">Accessibility,</a>
+              <a href="#">User Agreements,</a>
+              <a href="#">Privacy,</a>
+              <a href="#">Payments Terms of Use,</a>
+              <a href="#">Cookies,</a>
+              <a href="#">Your Privacy Choise</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- =========== Footer Area Html Code Start ========== -->
+
+
+
+
+
+
+  <!---------------- Home Page Main Content Area End--------------->
+
+  <!-- /----------- JavaScript Linkup Here-------------/ -->
+<script src="./assets/vendors/js/jquery.min.js"></script>
+<script src="./assets/vendors/js/bootstrap.min.js"></script>
+<script src="./assets/vendors/js/bootstrap.bundle.js"></script>
+<script src="./assets/vendors/js/popper.min.js"></script>
+
+  <!-- /----------- Plugins File Linkup Here-----------/ -->
+  <script src="./assets/vendors/js/animate.js"></script>
+  <script src="./assets/vendors/js/lightslider.js"></script>
+  <script src="tinymce/tinymce.min.js"></script>
+  <script src="./assets/vendors/js/text_editor.js"></script>
+  <script src="./assets/vendors/js/custom.js"></script>
+</body>
+
+</html>

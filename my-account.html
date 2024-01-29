@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuctionSystem | ------------------</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="shortcut icon" href="./assets/images/facicon.png" type="image/x-icon">
+
+  <!-- /---------- Css Linkup Here----------/ -->
+  <link rel="stylesheet" href="./assets/vendors/css/lightslider.css">
+  <link rel="stylesheet" href="./assets/vendors/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/vendors/css/animate.css">
+  <link rel="stylesheet" href="./assets/vendors/css/text-editor.css">
+  <link rel="stylesheet" href="./assets/vendors/css/main_style.css">
+  <link rel="stylesheet" href="./assets/vendors/css/responsive.css">
+
+</head>
+
+<body>
+
+
+  <!---------------- Home Page Main Content Area Start--------------->
+
+
+
+
+  <!-- ============= Header Area Html Code Start ================ -->
+  <header class="main_header scroll-header">
+    <div class="container">
+      <div class="row-wrap">
+        <div class="header_logo">
+          <a href="index.html">
+            <h1>Auction<span>S</span>ystem</h1>
+          </a>
+        </div>
+        <div class="nav-wrap">
+          <ul class="nav-list list-unstyled mb-0">
+            <li class=""><a class="" href="index.html">Home</a></li>
+            <li><a href="category.html">Category</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <div class="header_searchbar">
+              <div id="search-wrapper">
+                <i class="search-icon fas fa-search"></i>
+                <input type="text" id="search" placeholder="Search something here...">
+                <button id="search-button">Search</button>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <div class="login_signup_menu">
+          <ul class="list-unstyled mb-0">
+            <li class="list-inline-item"><a href="#">Login</a></li>
+            <li class="list-inline-item"><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
+
+
+
+
+
+
+
+        <div class="h_hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="overlay"></div>
+  <!-- ============= Header Area Html Code End ================ -->
+
+
+  <!-- ------------ Invoice Page Html Code Start ------------ -->
+  <section class="invoice_section">
+    <div class="container">
+      <div class="row">
+
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="creating_listing_form_title_wrapper">
+            <h4 class="form-title-sc">My Account</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- SlideBar Tab Menu List Custom  -->
+        <div class="col-lg-12">
+          <div class="sidebar_nav_tab_menu_wrapper d-flex">
+
+            <ul class="nav nav-pills flex-column left_sidebar_menu_wrapper mt-4" id="pills-tab" role="tablist">
+              <div class="sidebar_menuHeading mt-4">
+                <h6>Summary</h6>
+              </div>
+              <!-- ==========For Listing =============-->
+              <h4 class="left_sidebar_list_head">Listing</h4>
+              <li class="nav-item">
+                <button class="nav-link" id="pills-active-tab" data-bs-toggle="pill" data-bs-target="#pills-active"
+                  type="button" role="tab" aria-controls="pills-active" aria-selected="true">Active</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-successfull-tab" data-bs-toggle="pill" data-bs-target="#pills-successfull"
+                  type="button" role="tab" aria-controls="pills-successfull" aria-selected="false">Successfull</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-unsuccessfull-tab" data-bs-toggle="pill" data-bs-target="#pills-unsuccessfull"
+                  type="button" role="tab" aria-controls="pills-unsuccessfull" aria-selected="false">Unsuccessfull</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-ended-tab" data-bs-toggle="pill" data-bs-target="#pills-ended"
+                  type="button" role="tab" aria-controls="pills-ended" aria-selected="false">Ended</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-sales_report-tab" data-bs-toggle="pill" data-bs-target="#pills-sales_report"
+                  type="button" role="tab" aria-controls="pills-sales_report" aria-selected="false">Sales Report</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-invoice-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-invoice" type="button" role="tab" aria-controls="pills-invoice"
+                  aria-selected="false">Invoice</button>
+              </li>
+
+              <!-- ===========For Bidding =============-->
+              <h4 class="left_sidebar_list_head">Bidding</h4>
+              <li class="nav-item">
+                <button class="nav-link" id="pills-active-tab" data-bs-toggle="pill" data-bs-target="#pills-active"
+                type="button" role="tab" aria-controls="pills-active2" aria-selected="false">Active</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link"  id="pills-others-tab" data-bs-toggle="pill" data-bs-target="#pills-others"
+                type="button" role="tab" aria-controls="pills-others" aria-selected="false">Others</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-won-tab" data-bs-toggle="pill" data-bs-target="#pills-won"
+                  type="button" role="tab" aria-controls="pills-won" aria-selected="false">Won</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-won-tab" data-bs-toggle="pill" data-bs-target="#pills-won"
+                  type="button" role="tab" aria-controls="pills-won" aria-selected="false">Non Won</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-invoice-tab" data-bs-toggle="pill" data-bs-target="#pills-invoice"
+                type="button" role="tab" aria-controls="pills-invoice" aria-selected="false">Invoice</button>
+              </li>
+
+              <!-- ===========For Accounts ==============-->
+              <h4 class="left_sidebar_list_head">Account</h4>
+              <li class="nav-item">
+                <button class="nav-link">Details</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link">Addresses</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link">Credit Cards</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link">Password</button>
+              </li>
+   
+              <!-- =========For Messaging ===========-->
+              <h4 class="left_sidebar_list_head">Messaging</h4>
+              <li class="nav-item">
+                <button class="nav-link">Onbox</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link">Outbox</button>
+              </li>
+
+
+            </ul>
+
+            <div class="tab-content w-100" id="pills-tabContent">
+
+              <!-- For Listing Tab Pane Start-->
+              <div class="tab-pane fade" id="pills-active" role="tabpanel" aria-labelledby="pills-active-tab">
+                <h6>Hello</h6>
+              </div>
+              <div class="tab-pane fade" id="pills-successfull" role="tabpanel" aria-labelledby="pills-successfull-tab">
+                <h6>Hello</h6>
+              </div>
+              <div class="tab-pane fade" id="pills-ended" role="tabpanel" aria-labelledby="pills-ended-tab">
+                <h6>Hello</h6>
+              </div>
+              <div class="tab-pane fade" id="pills-sales_report" role="tabpanel" aria-labelledby="pills-sales_report-tab">
+                <h6>Hello</h6>
+              </div>
+
+              <div class="tab-pane fade show active mt-4" id="pills-invoice" role="tabpanel"
+                aria-labelledby="pills-invoice-tab">
+                <!-- For Listing  Invoice-->
+                <div class="invoice_main_wrapper">
+                  <div class="invoice_heading_wrapper d-flex justify-content-between align-items-center">
+                    <div class="invoice_back">
+                      <h4>Listing > Invoice</h4>
+                    </div>
+                    <div class="invoice_print">
+                      <button><span><i class="fa-solid fa-angle-left"></i></span> Back</button>
+                      <button onclick="print()">Print Invoice</button>
+                    </div>
+                  </div>
+                  <div class="invoice_content_wrapper aaaa">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="invoice_content_wrapper_sub">
+                          <div class="invoice_content_heading_payment">
+                            <a href="#">Checkout With <span>PayPal</span>></a>
+                          </div>
+                          <div class="invoice_content ms-4">
+                            <ul class="list-unstyled mt-4">
+                              <li><b>Seller:</b> Johann</li>
+                              <li><b>Invoice Number:</b> 12324</li>
+                            </ul>
+                            <ul class="list-unstyled mt-4">
+                              <li><b>Seller Address</b></li>
+                              <li>Johann</li>
+                              <li>123 Poppy City</li>
+                              <li>South Burlington, VT 45475 US</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="invoice_content_wrapper_sub">
+                          <div class="invoice_content_heading_payment">
+                            <a href="#">Checkout With <span>Credit Card</span>></a>
+                          </div>
+                          <div class="invoice_content ms-4">
+                            <ul class="list-unstyled mt-4">
+                              <li><b>Buyer:</b> Johann</li>
+                              <li><b>Date Created:</b> 01/27/2024 <span>2:00 AM</span></li>
+                            </ul>
+                            <ul class="list-unstyled mt-4">
+                              <li><b>Billing Address</b></li>
+                              <li>Johann</li>
+                              <li>123 Poppy City</li>
+                              <li>South Burlington, VT 45475 US</li>
+                            </ul>
+                            <div class="invoice_shipping_wrapper d-flex align-items-center mt-5">
+                              <div class="label_shipping">
+                                <h6><b>Shipping</b>*</h6>
+                              </div>
+                              <div class="shipping_input">
+                                <div class="slf_input">
+                                  <select class="slf_form_control" aria-label="Default select example">
+                                    <option selected>USPS $16.88</option>
+                                    <option value="1">USPS $16.88</option>
+                                    <option value="2">USPS $16.88</option>
+                                    <option value="3">USPS $16.88</option>
+                                  </select>
+                                </div>
+                              </div>
+
+                            </div>
+                            <ul class="list-unstyled mt-4">
+                              <div class="invoice_shipping_wrapper d-flex align-items-center">
+                                <div class="label_shipping">
+                                  <h6><b>Shipping Address</b>*</h6>
+                                </div>
+                                <div class="shipping_input">
+                                  <div class="slf_input">
+                                    <select class="slf_form_control" aria-label="Default select example">
+                                      <option selected disabled>Select</option>
+                                      <option value="1">Uk</option>
+                                      <option value="2">USA</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <li>Johann</li>
+                              <li>123 Poppy City</li>
+                              <li>South Burlington, VT 45475 US</li>
+                            </ul>
+
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Products Invoice Heading Row -->
+                    <div class="invoice_heading_product_des_wrapper">
+                      <div class="row g-2">
+                        <div class="col-lg-6">
+                          <div class="invoice_price_summary">
+                            <div class="invoice_heading_wrapper d-flex justify-content-between align-items-center">
+                              <div class="invoice_back">
+                                <h4>Description</h4>
+                              </div>
+                              <div class="invoice_back">
+                                <h4>Unit Price</h4>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="invoice_price_summary">
+                            <div class="invoice_heading_wrapper d-flex justify-content-between align-items-center">
+                              <div class="invoice_back">
+                                <h4>Quality</h4>
+                              </div>
+                              <div class="invoice_back">
+                                <h4>Total</h4>
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <!-- Products Invoice Des Row  -->
+                    <div class="row g-2">
+                      <div class="col-lg-6">
+                        <div class="des_unit_wrapper d-flex justify-content-between my-3">
+                          <div class="p_des_name">
+                            <h6>Hero 3 Black Edition</h6>
+                          </div>
+                          <div class="p_des_unit_price">
+                            <h6>$345.00</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="des_unit_wrapper d-flex justify-content-between my-3">
+                          <div class="p_des_name">
+                            <h6>1</h6>
+                          </div>
+                          <div class="p_des_unit_price">
+                            <h6>$345.00</h6>
+                          </div>
+                        </div>
+
+                        <!-- Invoice Subtotal -->
+                        <div class="des_unit_wrapper d-flex justify-content-between my-3">
+                          <div class="p_des_name">
+                            <h6>Subtotal</h6>
+                          </div>
+                          <div class="p_des_unit_price">
+                            <h6>$345.00</h6>
+                          </div>
+                        </div>
+                        <!-- Invoice Shpping -->
+                        <div class="des_unit_wrapper d-flex justify-content-between my-3">
+                          <div class="p_des_name">
+                            <h6>Shipping</h6>
+                          </div>
+                          <div class="p_des_unit_price">
+                            <div class="shipping_input">
+                              <div class="slf_input">
+                                <select class="slf_form_control" aria-label="Default select example">
+                                  <option selected>USPS $16.88</option>
+                                  <option value="1">USPS $16.88</option>
+                                  <option value="2">USPS $16.88</option>
+                                  <option value="3">USPS $16.88</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Invoice Sales Tax -->
+                        <div class="des_unit_wrapper d-flex justify-content-between my-3">
+                          <div class="p_des_name">
+                            <h6>Sales tax</h6>
+                          </div>
+                          <div class="p_des_unit_price">
+                            <h6>$00.00</h6>
+                          </div>
+                        </div>
+                        <!-- Invoice Total -->
+                        <div class="des_unit_wrapper des_unit_wrapper_total_style d-flex justify-content-between my-3">
+                          <div class="p_des_name">
+                            <h6>Total</h6>
+                          </div>
+                          <div class="p_des_unit_price">
+                            <h6>$361.88</h6>
+                          </div>
+                        </div>
+
+
+                      </div>
+
+
+                    </div>
+
+                  </div>
+
+                  <!-- Payment History Row -->
+                  <div class="row mt-4">
+                    <div class="col-lg-12">
+                      <div class="payment_history_top">
+                        <h5>Payment History</h5>
+                      </div>
+                      <div class="payment_history_top text-center">
+                        <h5>No Payment Records</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- For Listing Invoice -->
+              </div>
+
+              <div class="tab-pane fade" id="pills-unsuccessfull" role="tabpanel" aria-labelledby="pills-unsuccessfull-tab">
+                <!-- For Listing Unsuccessfull -->
+                <div class="invoice_main_wrapper">
+                  <!-- Breadcumb -->
+                  <div class="invoice_heading_wrapper">
+                    <div class="invoice_back">
+                      <h4>Listing > Unsuccessfull</h4>
+                    </div>
+                  </div>
+                  <!-- Breadcumb -->
+
+                  <!-- invoice content wrapper -->
+                  <div class="invoice_content_wrapper mt-4">
+                    <!-- view sort filter -->
+                    <div class="view_short_filter_wrapper d-flex align-items-center">
+                      <div class="won_sort won_views">
+                        <article>
+                          <span>Sort</span>
+                          <select name="#" id="#" class="my_form_control">
+                            <option value="small" selected>Newest Purchases</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extra">Extra Large</option>
+                          </select>
+                        </article>
+                      </div>
+                      <div class="won_filter won_views">
+                        <button class="my_form_control"><span><i class="fa-solid fa-filter"></i></span>
+                          Filter</button>
+                      </div>
+                    </div>
+                    <!-- view sort filter -->
+                  </div>
+                  <!-- invoice content wrapper -->
+
+                  <!-- invoice content wrapper -->
+                  <div class="invoice_content_wrapper mt-4">
+
+                    <div class="won_filter won_views">
+                      <button class="my_form_control">Archive</button>
+                      <button class="my_form_control">Copy</button>
+                      <button class="btn btn-sm btn-danger">Delete</button>
+                    </div>
+                    <!-- Product Listing Wrapper1 -->
+                    <div class="product_listing_wrapper">
+                      <div class="p_listing_check_content_wrap d-flex">
+                        <div class="p_listing_checkbox">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          </div>
+                        </div>
+                        <div class="p_listing_right_content">
+                          <ul class="list-unstyled">
+                            <li>Title (Listing ID)</li>
+                            <li>Sale Date/Time (Seller)</li>
+                            <li>
+                              <ul class="list-unstyled">
+                                <li class="list-inline-item">Quality</li>
+                                <li class="list-inline-item">Unit Price</li>
+                                <li class="list-inline-item">Total Price</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Product Listing Wrapper2 -->
+                    <div class="product_listing_wrapper">
+
+                    <div class="p_listing_check_content_wrap d-flex">
+
+                        <div class="p_listing_checkbox">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          </div>
+                        </div>
+
+                        <div class="p_listing_img">
+                          <img src="./assets/vendors/images/p3.webp" alt="">
+                        </div>
+
+                        <div class="p_listing_right_content">
+                          <h6>Mens Designer Stocks (343535)</h6>
+                          <span>01/27/2024 11:30 AM ET</span>
+                          <ul class="list-unstyled d-flex justify-content-between">
+                            <li>1</li>
+                            <li>$120.00</li>
+                            <li>$59.99
+                              <div class="reserve_price mt-2">
+                                <p><span>Reserve:</span> $300.00</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="three_dot_toggle_dropdown">
+                          <div class="dropdown">
+                            <div class="dropdown-btn">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                            <div class="dropdown-area">
+                              <ul>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Submit Feedback</a></li>
+                                <li><a href="#">View Listing</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+
+                    </div>
+
+                    </div>
+
+                  </div>
+                  <!-- invoice content wrapper -->
+
+                  <!-- For Listing Unsuccessfull-->
+
+                </div>
+
+            </div>
+
+            <!-- For Listing Tab Pane End-->
+            <!-- For Bidding Tab Panel Start -->
+              <div class="tab-pane fade" id="pills-active" role="tabpanel" aria-labelledby="pills-active-tab">
+                <h6>Hello</h6>
+              </div>
+              <div class="tab-pane fade" id="pills-others" role="tabpanel" aria-labelledby="pills-others-tab">
+                <h6>Hello</h6>
+              </div>
+              <div class="tab-pane fade mt-4" id="pills-won" role="tabpanel" aria-labelledby="pills-won-tab">
+
+                <!-- For Bidding Won -->
+                <div class="invoice_main_wrapper">
+                  <!-- Breadcumb -->
+                  <div class="invoice_heading_wrapper">
+                    <div class="invoice_back">
+                      <h4>Bidding > Won</h4>
+                    </div>
+                  </div>
+                  <!-- Breadcumb -->
+
+                  <!-- invoice content wrapper -->
+                  <div class="invoice_content_wrapper mt-4">
+                    <!-- view sort filter -->
+                    <div class="view_short_filter_wrapper d-flex align-items-center">
+                      <div class="won_views">
+                        <article>
+                          <span>View</span>
+                          <select name="#" id="#" class="my_form_control">
+                            <option value="small" selected>All</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extra">Extra Large</option>
+                          </select>
+                        </article>
+                      </div>
+                      <div class="won_sort won_views">
+                        <article>
+                          <span>Sort</span>
+                          <select name="#" id="#" class="my_form_control">
+                            <option value="small" selected>Newest Purchases</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extra">Extra Large</option>
+                          </select>
+                        </article>
+                      </div>
+                      <div class="won_filter won_views">
+                        <button class="my_form_control"><span><i class="fa-solid fa-filter"></i></span> Filter</button>
+                      </div>
+                    </div>
+                    <!-- view sort filter -->
+
+                  </div>
+                  <!-- invoice content wrapper -->
+
+
+                  <!-- invoice content wrapper -->
+                  <div class="invoice_content_wrapper mt-4">
+                    <div class="won_filter won_views">
+                      <button class="my_form_control">Archive</button>
+                    </div>
+                    <!-- Product Listing Wrapper1 -->
+                    <div class="product_listing_wrapper">
+                      <div class="p_listing_check_content_wrap d-flex">
+                        <div class="p_listing_checkbox">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          </div>
+                        </div>
+                        <div class="p_listing_right_content">
+                          <ul class="list-unstyled">
+                            <li>Title (Listing ID)</li>
+                            <li>Sale Date/Time (Seller)</li>
+                            <li>
+                              <ul class="list-unstyled">
+                                <li class="list-inline-item">Quality</li>
+                                <li class="list-inline-item">Unit Price</li>
+                                <li class="list-inline-item">Total Price</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Product Listing Wrapper2 -->
+                    <div class="product_listing_wrapper">
+                      <div class="p_listing_check_content_wrap d-flex">
+                        <div class="p_listing_checkbox">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          </div>
+                        </div>
+
+                        <div class="p_listing_img">
+                          <img src="./assets/vendors/images/iphone2.png" alt="">
+                        </div>
+
+                        <div class="p_listing_right_content">
+                          <h6>Mens Designer Stocks (343535)</h6>
+                          <span>01/27/2024 11:30 AM</span>
+                          <ul class="list-unstyled d-flex justify-content-between">
+                            <li>1</li>
+                            <li>$154.95</li>
+                            <li>$154.95</li>
+
+                          </ul>
+                        </div>
+                        <div class="three_dot_toggle_dropdown">
+                          <div class="dropdown">
+                            <div class="dropdown-btn">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                            <div class="dropdown-area">
+                              <ul>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Submit Feedback</a></li>
+                                <li><a href="#">View Listing</a></li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <div class="won_filter won_views text-end">
+                            <button class="my_form_control">Checkout</button>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- Product Listing Wrapper3 Archive -->
+                    <div class="won_filter won_views mt-4">
+                        <button class="my_form_control">Archive</button>
+                    </div>
+
+                  </div>
+                  <!-- invoice content wrapper -->
+
+                  <!-- For Bidding Won -->
+              </div>
+
+              <div class="tab-pane fade" id="pills-won" role="tabpanel" aria-labelledby="pills-won-tab">
+                <h6>Hello</h6>
+              </div>
+              <div class="tab-pane fade" id="pills-invoice" role="tabpanel" aria-labelledby="pills-invoice">
+                <h6>Hello</h6>
+              </div>
+            <!-- For Bidding Tab Panel End -->
+
+
+
+
+
+              </div>
+            </div>
+
+
+            <!-- SlideBar Tab Menu List Custom  -->
+
+
+          </div>
+        </div>
+  </section>
+
+  <!-- ------------ Invoice Page Html Code Start ------------ -->
+
+
+
+
+
+  <!-- =========== Footer Area Html Code Start ========== -->
+
+  <footer class="our_footer">
+    <div class="footer_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="footer_title">
+              <h4>Buy</h4>
+            </div>
+            <div class="footer_menu">
+              <ul class="list-unstyled">
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">Bidding & Buying Help</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="footer_title">
+              <h4>Sell</h4>
+            </div>
+            <div class="footer_menu">
+              <ul class="list-unstyled">
+                <li><a href="#">Start Selling</a></li>
+                <li><a href="#">How to Sell</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="footer_title">
+              <h4>Stay Connected</h4>
+            </div>
+            <div class="footer_menu">
+              <ul class="list-unstyled">
+                <li><a href="#"><span><i class="fa-brands fa-facebook"></i></span> Facebook</a></li>
+                <li><a href="#"><span><i class="fa-brands fa-twitter"></i></span> Twitter</a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="footer_title">
+              <h4>Help & Contact</h4>
+            </div>
+            <div class="footer_menu">
+              <ul class="list-unstyled">
+                <li><a href="#">Seller Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">eBay Returns</a></li>
+                <li><a href="#">eBay Moneybag Guarantee</a></li>
+              </ul>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <div class="footer_copyright text-center">
+              <p class="mb-0">&copy; Copyright 2024 AuctionSystem. All right reserved. 
+                <a href="#">Accessibility,</a>
+                <a href="#">User Agreements,</a>
+                <a href="#">Privacy,</a>
+                <a href="#">Payments Terms of Use,</a>
+                <a href="#">Cookies,</a>
+                <a href="#">Your Privacy Choise</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- =========== Footer Area Html Code Start ========== -->
+
+
+
+
+
+
+
+  <!---------------- Home Page Main Content Area End--------------->
+
+
+
+
+
+
+  <!-- /----------- JavaScript Linkup Here-------------/ -->
+  <script src="./assets/vendors/js/jquery.min.js"></script>
+  <script src="./assets/vendors/js/bootstrap.min.js"></script>
+  <script src="./assets/vendors/js/bootstrap.bundle.js"></script>
+  <script src="./assets/vendors/js/popper.min.js"></script>
+
+  <!-- /----------- Plugins File Linkup Here-----------/ -->
+  <script src="./assets/vendors/js/animate.js"></script>
+  <script src="./assets/vendors/js/lightslider.js"></script>
+  <script src="./assets/vendors/js/text-editor.js"></script>
+  <script src="./assets/vendors/js/custom.js"></script>
+</body>
+
+</html>

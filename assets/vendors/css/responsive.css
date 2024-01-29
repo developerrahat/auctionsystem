@@ -1,0 +1,230 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .main_header {
+        padding: 20px 0;
+    }
+    .header_logo a h1 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .banner_section {
+        height: 380px;
+    }
+    .hero_title_main_wrap {
+        height: 400px;
+    }
+    .hero_content_wrapper h1 {
+        font-size: 32px;
+    }
+
+
+    /* ======== Listing Category Page Media Css Start =============*/
+    .form {
+        padding: 15px 10px;
+    }
+    .form-title-sc {
+        font-size: 12px;
+    }
+    .listbox {
+        width: 100%;
+    }
+    .ct_l_heading {
+        padding: 5px 10px;
+    }
+    .slf_wrapper_width {
+        width: 100%;
+    }
+    .sl_fields_wrapper {
+        display: inherit !important;
+    }
+    .slf_input {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .slf_title {
+        width: 0%;
+        text-align: left;
+    }
+    /* ======== Listing Category Page Media Css Start ============*/
+
+    .ad_ds_rc_filter_btns_wrapper {
+        display: inherit !important;
+    }
+    .ad_ds_rc_filter_btns {
+        display: inherit !important;
+    }
+
+    /* =========== My Account Page Media Css Start ============ */
+    .sidebar_nav_tab_menu_wrapper.d-flex {
+        display: inherit !important;
+    }
+    .left_sidebar_menu_wrapper {
+        width: 100%;
+    }
+    .invoice_content_wrapper_sub {
+        margin: 5px 0px;
+    }
+    .invoice_content.ms-4 {
+        margin-left: 0 !important;
+    }
+    .p_listing_check_content_wrap {
+        display: inherit !important;
+    }
+    .p_listing_right_content {
+        width: 100%;
+    }
+    .p_listing_checkbox {
+        width: 100%;
+    }
+    .view_short_filter_wrapper {
+        display:  inherit !important;
+    }
+    .p_listing_right_content ul li {
+        font-size: 14px;
+    }
+    .p_listing_right_content ul li ul li {
+        margin: 0 1rem;
+    }
+    /* =========== My Account Page Media Css Start ============ */
+
+
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .ps_img img {
+        height: 165px;
+    }
+
+    /* ======== Listing Category Page Media Css Start =============*/
+    .form {
+        padding: 15px 10px;
+    }
+    .listbox {
+        width: 100%;
+    }
+    .ct_l_heading {
+        padding: 5px 10px;
+    }
+    .slf_wrapper_width {
+        width: 100%;
+    }
+    .sl_fields_wrapper {
+        display: inherit !important;
+    }
+    .slf_input {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .slf_title {
+        width: 0%;
+        text-align: left;
+    }
+    /* ======== Listing Category Page Media Css Start ============*/
+
+    
+    /* =========== My Account Page Media Css Start ============ */
+    .sidebar_nav_tab_menu_wrapper.d-flex {
+        display: inherit !important;
+    }
+    .left_sidebar_menu_wrapper {
+        width: 100%;
+    }
+    .invoice_content_wrapper_sub {
+        margin: 5px 0px;
+    }
+    .invoice_content.ms-4 {
+        margin-left: 0 !important;
+    }
+    .p_listing_check_content_wrap {
+        display: inherit !important;
+    }
+    .p_listing_right_content {
+        width: 100%;
+    }
+    .p_listing_checkbox {
+        width: 100%;
+    }
+
+    /* =========== My Account Page Media Css Start ============ */
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .ps_img img {
+        height: 165px;
+    }
+
+        /* ======== Listing Category Page Media Css Start =============*/
+
+        .listbox {
+            width: 100%;
+        }
+        .ct_l_heading {
+            padding: 5px 10px;
+        }
+        .slf_wrapper_width {
+            width: 100%;
+        }
+        .sl_fields_wrapper {
+            display: inherit !important;
+        }
+        .slf_input {
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        .slf_title {
+            width: 100%;
+            text-align: left;
+        }
+        /* ======== Listing Category Page Media Css Start ============*/
+
+
+ }
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .nav-list li a {
+        margin: 0 6px;
+    }
+    #search {
+        width: 200px;
+    }
+    
+        /* ======== Listing Category Page Media Css Start =============*/
+        .listbox {
+            width: 100%;
+        }
+        .ct_l_heading {
+            padding: 5px 10px;
+        }
+        .slf_wrapper_width {
+            width: 70%;
+        }
+        .sl_fields_wrapper {
+            display: inherit !important;
+        }
+        .slf_input {
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        .slf_title {
+            width: 100%;
+            text-align: left;
+        }
+        /* ======== Listing Category Page Media Css Start ============*/
+
+
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+  
+ }
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+   
+
+ }
