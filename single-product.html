@@ -39,14 +39,14 @@
 			<div class="nav-wrap">
 				<ul class="nav-list list-unstyled mb-0">
 					<li class=""><a class="" href="index.html">Home</a></li>
-					<li><a href="#">Category</a></li>
+					<li><a href="category.html">Category</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Contact</a></li>
           <div class="header_searchbar">
             <div id="search-wrapper">
               <i class="search-icon fas fa-search"></i>
-              <input type="text" id="search" placeholder="Search something here...">
-              <button id="search-button">Search</button>
+              <input type="text" id="search" placeholder="Search something here...!">
+              <!-- <button id="search-button">Search</button> -->
             </div>
           </div>
 				</ul>
@@ -85,7 +85,10 @@
         <div class="breadcumb_title">
           <ul class="list-unstyled">
             <li class="list-inline-item"><a href="index.html">Home</a> <span>/</span></li>
-            <li class="list-inline-item">IPhone 15 Pro Max</li>
+            <li class="list-inline-item"><a href="#">Browse</a> <span>/</span></li>
+            <li class="list-inline-item"><a href="#">Automotive</a> <span>/</span></li>
+            <li class="list-inline-item"><a href="#">Sonata</a> <span>/</span></li>
+            <li class="list-inline-item">2015 Hyundai Sonata (1)</li>
           </ul>
         </div>
       </div>
@@ -93,7 +96,7 @@
   </div>
 </section>
 
-<section class="product_details">
+<section class="product_details pb-5">
   <div class="container">
     <div class="row">
       <div class="col-lg-5">
@@ -119,7 +122,7 @@
             </ul>
           </div>
 
-          <div class="social_share_icon text-center mt-4">
+          <div class="social_share_icon text-center mt-5">
             <ul class="list-unstyled">
               <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
               <li class="list-inline-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -157,14 +160,21 @@
         <div class="single_product_details_content">
           <div class="p_title_wrapper d-flex justify-content-between">
             <div class="sp_title">
-              <h1>IPhone 15 Pro Max</h1>
+              <h1>2015 Hyundai Sonata</h1>
+              <h4>ONLY 500 Miles - Like New</h4>
             </div>
             <div class="sp_active">
               <span>Active</span>
             </div>
           </div>
-          <div class="sp_current_price mt-2">
-            <h1>Current Price: <span>$2,000.00</span></h1>
+          <div class="sp_current_price_wrapper d-flex align-items-center mt-2">
+            <div class="current_price">
+              <h1>Current Price: <span>$2,000.00</span></h1>
+            </div>
+            <div class="current_price_response">
+              <h4><span>(0)</span> No Reserve</h4>
+            </div>
+            
           </div>
         </div>
 
@@ -174,7 +184,6 @@
               <a href="#">Quick Bid $2,000.00</a>
             </div>
             <hr>
-
             <div class="bid_form_input">
               <div class="input-wrapper">
                 <div class="input-icon user-none">$</div>
@@ -183,8 +192,7 @@
             <span>Maximum Bid 2,100.00</span>
             </div>
 
-            <hr>
-            <div class="buy_now_btn">
+            <div class="buy_now_btn mt-3">
               <button type="submit">Submit Max Bid</button>
             </div>
 
@@ -195,8 +203,11 @@
               <a href="#">+ Add to Watch List</a>
             </div>
             <div class="watching_list_wrapper">
-              <h5>0 Watching</h5>
-              <a href="#">+ Add to Watch List</a>
+              <h5>High Bidder: JuanGonzalez</h5>
+              <div class="watching_list_bid_history_wrapper d-flex justify-content-between align-items-center">
+                <a href="#">1 Bid(s)</a>
+                <a href="#">Bid History ></a>
+              </div>
             </div>
           </div>
         </div>
@@ -204,7 +215,7 @@
         <div class="remaining_time_head my-2">
           <h1>Remaining Time</h1>
         </div>
-        <div class="row align-items-center">
+        <div class="row g-0 align-items-center">
           <div class="col-lg-6">
             <div class="rmn_sp_des">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio harum officiis hic</p>
@@ -219,26 +230,23 @@
         </div>
 
         <div class="sp_summary_wrapper my-2">
-          <div class="row">
+          <div class="row g-0">
             <div class="col-lg-6">
               <div class="sp_summary_list_item">
                 <h4>AutoGallery</h4>
                 <h6>Ab Abraham Lincon, SD, DR</h6>
-                <ul class="list-unstyled sp_rating">
-                  <li class="list-inline-item"><a href="#"><i class="fa-solid fa-star"></i></a></li>
-                  <li class="list-inline-item"><a href="#"><i class="fa-solid fa-star"></i></a></li>
-                  <li class="list-inline-item"><a href="#"><i class="fa-solid fa-star"></i></a></li>
-                  <li class="list-inline-item"><a href="#"><i class="fa-solid fa-star"></i></a></li>
-                  <li class="list-inline-item"><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                <ul class="list-unstyled sp_rating d-flex">
+                  <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                  <span>4</span>
                 </ul>
                 <a href="#">View Seller's Other Listing</a>
-                <p><a href="#">Contact Seller</a></p>
+                <p><a href="#"><span><i class="fa-solid fa-envelope"></i></span> Contact Seller</a></p>
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="sp_summary_list_item">
+              <div class="sp_summary_list_item sp_summary_list_item_right">
                 <h4>Payment Options</h4>
-                <h6>Ab Abraham Lincon, SD, DR</h6>
+                <h6>Seller Accepts Paypal</h6>
               </div>
             </div>
 
@@ -259,6 +267,28 @@
 <!-- ------------ Single Product Page Html Code Start ------------ -->
 
 
+<section class="question_answer pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="qa_wrapper_main">
+
+          <div class="qa_wrapper d-flex justify-content-between align-items-center">
+            <div class="qa_title">
+              <h6>Questions & Answers</h6>
+            </div>
+            <div class="qa_title">
+              <a href="#">Sign in to post a question</a>
+            </div>
+          </div>
+
+          <h1>Thre are no quesrion for this listing.</h1>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 

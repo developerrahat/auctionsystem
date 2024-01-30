@@ -9,6 +9,7 @@
 .admin_dashboard_section{
     padding: 20px 0;
     margin-top: 70px;
+    height: 100vh;
 }
 .left_sidebar_menu_wrapper_admin_dashboard{
   padding: 10px;
@@ -38,9 +39,21 @@
   li.have-children ul {
     padding: 0px;
   }
+  .sidebar_sub_menu{
+    display: block !important;
+    background: var(--bg-gray);
+  }
+  .sidebar_sub_menu li{
+    border-bottom: 1px solid #ddd !important;
+    border-left: 4px solid #0050ae;
+  }
+  .sidebar_sub_menu li a{
+    margin-left: 25px !important;
+
+  }
   li.have-children ul li a {
     background-color: var(--bg-gray);
-    padding-left: 30px;
+    padding-left: 16px;
     color: var(--primary-color);
     border-bottom: 1px solid #ddd;
     text-transform: capitalize;
@@ -131,6 +144,7 @@
   .custom_from_group label{
     color: #0091f2;
     font-size: 14px;
+    font-weight: 700;
   }
 
   .admin_d_input_field_wrapper_footer{
@@ -147,8 +161,7 @@
   }
 
   .total_price_wrapper{
-    padding: 5px 10px;
+    padding: 8px 10px;
     border: 1px solid #ddd;
-    background: var(--bg-gray);
     border-radius: 4px;
   }

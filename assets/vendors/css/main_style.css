@@ -92,14 +92,15 @@ ul{
 }
 .header_logo a h1{
 	margin-bottom: 0;
-	font-size: 24px;
+	font-size: 26px;
 	color: var(--primary-color);
+	font-weight: 700;
 }
 .header_logo a h1 span{
 	color: var(--secondary-color);
 	text-transform: uppercase;
-	font-size: 24px;
-	font-weight: 700;
+	font-size: 28px;
+	font-weight: 800;
 }
 .row-wrap {
 	display: flex;
@@ -115,14 +116,14 @@ ul{
 	padding: 0 10px;
 }
 .nav-list li a {
-	color: var(--primary-color);
+	color: #003459;
 	font-size: 16px;
 	text-decoration: none;
     margin: 0 20px;
 	position: relative;
 	display: block;
     transition: .4s ease-in-out;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .nav-list li:last-child a {
@@ -179,13 +180,13 @@ ul{
 	background-color: #fff;
 	overflow: hidden;
 	max-width: 400px;
-	box-shadow:0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+	box-shadow:0px 0px 5px -1px rgba(0, 0, 0, 0.1);
   }
   #search {
-	border: none;
-	width: 350px;
-	font-size: 15px;
-  }
+    border: none;
+    width: 320px;
+    font-size: 15px;
+}
   #search:focus {
 	outline: none;
   }
@@ -203,8 +204,8 @@ ul{
   
   .login_signup_menu ul li a{
 	font-size: 16px;
-	font-weight: 600;
-	color: var(--primary-color);
+	font-weight: 700;
+	color: #003459;
   }
 
 
@@ -276,20 +277,23 @@ ul{
 .hero_content_wrapper h1{
 	font-size: 42px;
 	font-weight: 700;
+	color: var(--primary-color);
 }
 .hero_content_wrapper h4{
 	font-size: 20px;
+	color: var(--primary-color);
 }
 .hero_content_wrapper p{
 	font-weight: 700;
+	color: var(--primary-color);
 }
   /*Button Two*/
   .button-two {
 	display: inline-block;
-	border-radius: 4px;
+	border-radius: 30px;
 	background-color:#003459;
 	border: none;
-	padding:5px 1rem;
+	padding:8px 1rem;
 	transition: all 0.5s;
   }
   
@@ -371,7 +375,7 @@ ul{
 	padding: 60px 0;
 }
 .category_regions_main_wrapper{
-	height: 600px;
+	min-height: 700px;
 	overflow-y: scroll;
 	padding: 25px;
 	box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, .1);
@@ -389,13 +393,15 @@ ul{
 	margin: 1rem 0;
 	align-items: center;
 }
-.category_menu_items a{}
+.category_menu_items a{
+	font-weight: 600;
+}
 .category_menu_items span{
 	display: inline-block;
 	width: 24px;
 	height: 24px;
 	line-height: 24px;
-	background: var(--primary-color);
+	background: #2e2f33;
 	text-align: center;
 	color: #fff;
 	border-radius: 50%;
@@ -508,24 +514,40 @@ ul{
 	padding-bottom: 1rem;
 	border-bottom: 4px solid #ddd;
   }
-  .sp_title h1{
-	font-size: 20px;
-  }
+  .sp_title h1 {
+    font-size: 24px;
+}
+  .sp_title h4 {
+	margin-bottom: 0;
+    font-size: 18px;
+}
   .sp_active span{
 	display: inline-block;
-	background: #009933;
+	background: #1d9bf0;
 	padding: 0px 10px;
-	border-radius: 30px;
+	border-radius: 4px;
 	font-size: 12px;
 	color: #fff;
 	font-weight: 700;
 
   }
-  .sp_current_price h1{
+  .sp_current_price_wrapper{
+	grid-gap: 2rem;
+  }
+  .current_price h1{
 	font-size: 16px;
   }
-  .sp_current_price h1 span{
+  .current_price h1 span{
 	color: #009933;
+  }
+  .current_price_response h4{
+	color: #1d9bf0;
+	font-size: 13px;
+	font-weight: 700;
+  }
+  .current_price_response h4 span{
+	color: var(--primary-color);
+	font-weight: 500;
   }
   .buy_now_btn a{
 	padding: 5px 1rem;
@@ -534,7 +556,7 @@ ul{
 	background: #a31815;
 	text-align: center;
 	color: #fff;
-	font-weight: 700;
+	font-weight: 600;
 	border-radius: 5px;
   }
   .buy_now_btn button{
@@ -544,13 +566,15 @@ ul{
 	background: #009933;
 	text-align: center;
 	color: #fff;
-	font-weight: 700;
+	font-weight: 600;
 	border-radius: 5px;
 	border: none;
   }
 
   .bid_form_input span{
+	display: block;
 	font-size: 12px;
+	text-align: end;
   }
   .input-wrapper{
 	display: flex;
@@ -559,7 +583,7 @@ ul{
 	position: relative;
   }
   .input-wrapper input{
-	padding-left: 1.5rem;
+	padding-left: 2.8rem;
 	width: 100%;
 	height: 36px;
 	position: relative;
@@ -573,7 +597,7 @@ ul{
 	top: 0;
 	left: 0;
 	background: #eee;
-	padding: 5px;
+	padding: 5px 14px;
 	border: 1px solid #ddd;
 	user-select: none;
 	z-index: 99;
@@ -593,8 +617,7 @@ ul{
 	font-weight: 700;
   }
   .remaining_time_head{
-	background: var(--bg-gray);
-	padding: 10px;
+	padding-bottom: 1rem;
   }
   .remaining_time_head h1{
 	margin-bottom: 0;
@@ -612,8 +635,18 @@ ul{
   }
   .sp_summary_list_item{
 	padding: 10px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	border-radius: 5px 0 0 5px;
+  }
+  .sp_summary_list_item.sp_summary_list_item_right{
+	padding: 10px;
+	border-top: 1px solid #ddd;
+	border-left: none;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-radius: 0 5px 5px 0;
   }
   .sp_summary_list_item h4{
 	margin-bottom: 0;
@@ -626,16 +659,22 @@ ul{
 	margin-bottom: 0;
 	margin-top: 5px;
   }
+  .sp_rating{
+	grid-gap: 4rem;
+  }
   .sp_rating li a{
-	margin: 0 -5px;
-	font-size: 12px;
+	font-size: 14px;
 	color: #ffbb00;
+  }
+  .sp_rating span{
+	color: #1d9bf0;
+	font-weight: 600;
   }
   .sp_descriptions_wrapper{
 	padding:10px 1rem;
 	border: 1px solid #ddd;
 	border-radius: 5px;
-
+	min-height: 400px;
   }
   .sp_descriptions_wrapper h4{
 	padding-bottom: 10px;
@@ -643,6 +682,31 @@ ul{
 	font-weight: 700;
 	border-radius: 5px;
 	border-bottom: 1px solid #ddd;
+  }
+
+  .qa_wrapper_main{
+	padding:0 1rem 0 1rem;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+  }
+  .qa_wrapper_main h1{
+	padding: 1.5rem 0;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 16px;
+	color: #6a6a6a;
+	font-style: italic;
+  }
+  .qa_wrapper{
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+  }
+  .qa_title h6{
+	margin-bottom: 0;
+	font-weight: 700;
+  }
+  .qa_title a{
+	font-weight: 700;
   }
 /* =========== Single Product Page Style Css Start =============== */
 
@@ -656,12 +720,21 @@ ul{
 	border-radius: 4px;
 	border: 1px solid #ddd;
   }
+  .creating_listing_form_title_wrapper2{
+	padding: 12px 10px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+  }
+  .creating_listing_form_title_wrapper2 .listing_title_form{
+	font-size: 16px;
+	font-weight: 700;
+  }
   .creating_listing_form_title_wrapper h4{
 	margin-bottom: 0;
   }
   .form-title-sc {
 	color:var(--primary-color);
-	font-size:14px;
+	font-size:15px;
 	font-weight: 600;
   }
   .form-title-sc span{
@@ -691,14 +764,14 @@ ul{
 	border-radius: 4px;
 }
   /*Steps*/
-  
   .step-tab-items {
-	position: relative;
-	display: flex;
-	align-items: center;
-	margin-bottom: 25px;
-	justify-content: center;
-  }
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: center;
+    display: none;
+}
   
   .step-tab-items .step-item {
 	position: relative;
@@ -809,15 +882,15 @@ ul{
 	padding: 10px;
 
 }
-  .listbox {
-	display: inline-block;
-	background-color: white;
-	border: 1px solid #ddd;
-	border-radius: 4px;
-	width: 180px;
-	vertical-align: top;
-	height: 150px;
-  }
+.listbox {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    vertical-align: top;
+    height: 150px;
+}
   .listbox:focus {
 	border-color: #2f85d8;
 	box-shadow: rgba(0, 109, 223, 0.15) 0 1px 1px inset,
@@ -867,27 +940,19 @@ ul{
 
   .category_listing_lists{}
   .ct_l_heading{
-	padding: 10px;
-	background: var(--bg-gray);
-	border-radius: 4px;
+	padding:8px 10px;
+	border-radius: 4px 4px 0 0;
 	border: 1px solid #ddd;
   }
   .ct_l_heading h4{
 	margin-bottom: 0;
 	font-size: 16px;
+	font-weight: 700;
   }
   .ct_l_heading h4 span{
 	color: #fd0501;
   }
 
-  .standard_listing_fields h4{
-	padding: 10px;
-	margin-bottom: 0;
-	font-size: 16px;
-	background: var(--bg-gray);
-	border-radius: 4px;
-	border: 1px solid #ddd;
-  }
 
   .standard_listing_fields{
 	padding: 1rem;
@@ -948,6 +1013,17 @@ ul{
 	border-radius: 4px 0 0 4px;
 }
 
+.introgative_mark{
+	display: inline-block;
+	margin-left:.2rem;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-weight: 700;
+}
 
 .tox .tox-promotion {
     display: none;
@@ -1023,7 +1099,7 @@ ul{
 
   /* Shipping============ */
   .shipping_add_btn{
-	padding: 4px 10px;
+	height: 36px;
 	border: 1px solid #ddd;
 	border-radius: 4px;
 	background: #fff;
@@ -1505,14 +1581,13 @@ ul{
   .p_listing_right_content h6{
 	color: #006ddf;
   }
-  .reserve_price p{
-	padding: 1px 16px;
-	background: #6a6a6a;
-	color: #fff;
-	border-radius: 30px;
-	font-weight: 700;
-  }
-
+  .reserve_price p {
+    padding: 1px 16px;
+    background: #6a6a6a;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+}
   /* Three Dot Dropdown Menu  */
 
   .dropdown-btn {

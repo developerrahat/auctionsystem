@@ -45,8 +45,8 @@
           <div class="header_searchbar">
             <div id="search-wrapper">
               <i class="search-icon fas fa-search"></i>
-              <input type="text" id="search" placeholder="Search something here...">
-              <button id="search-button">Search</button>
+              <input type="text" id="search" placeholder="Search something here...!">
+              <!-- <button id="search-button">Search</button> -->
             </div>
           </div>
 				</ul>
@@ -83,14 +83,14 @@
   <div class="container">
     <div class="row">
       <form action="#" method="POST" class="form">
-        <div class="steps">
+        <div class="steps mt-4">
           <ul class="step-tab-items ps-0">
             <li class="step-item active">01</li>
             <li class="step-item">02</li>
           </ul>
           <div class="step-tabs">
             <div class="step-tab active" id="step-01">
-              <div class="creating_listing_form_title_wrapper d-flex justify-content-between">
+              <div class="creating_listing_form_title_wrapper d-flex justify-content-between align-items-center">
                 <h4 class="form-title-sc">Create Listing - Step 1 of 2</h4>
                 <h4 class="form-title-sc">All fields marked with " <span>*</span> " are required</h4>
               </div>
@@ -121,7 +121,7 @@
                   <h4>Listing Type<span>*</span></h4>
                 </div>
                 <div class="slf_input">
-                  <select class="form-select slf_form_control" aria-label=".form-select-sm example">
+                  <select class="form-select slf_form_control slf_form_controlpl-0" aria-label=".form-select-sm example">
                     <option selected>Select Category First</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -159,16 +159,18 @@
 
             <!-- Form Step 2 of 2 -->
             <div class="step-tab" id="step-02">
-              <div class="creating_listing_form_title_wrapper d-flex justify-content-between">
+              <div class="creating_listing_form_title_wrapper d-flex justify-content-between align-items-center">
                 <h4 class="form-title-sc">Create Listing - Step 2 of 2 (Auction)</h4>
                 <h4 class="form-title-sc">All fields marked with " <span>*</span> " are required</h4>
               </div>
-              <div class="creating_listing_form_title_wrapper mt-4">
-                <h4 class="form-title-sc">Category > Automotive > Hyundai > Sonata</h4>
+              <div class="creating_listing_form_title_wrapper2 mt-4">
+                <h4 class="form-title-sc mb-0">Category: Automotive > Hyundai > Sonata</h4>
               </div>
 
               <div class="standard_listing_fields mt-4">
-                <h4>Standard Listing Fields</h4>
+                <div class="creating_listing_form_title_wrapper2">
+                  <h4 class="form-title-sc listing_title_form mb-0">Standard Listing List</h4>
+                </div>
                 <div class="slf_wrapper_width ms-auto">
                   <div class="sl_fields_wrapper d-flex align-items-center">
                     <div class="slf_title">
@@ -208,7 +210,9 @@
 
               <!-- listing fields -->
               <div class="standard_listing_fields mt-4">
-                <h4>Listing Fields</h4>
+                <div class="creating_listing_form_title_wrapper2">
+                  <h4 class="form-title-sc listing_title_form mb-0">Listing Fields</h4>
+                </div>
                 <div class="slf_wrapper_width m-auto">
                   <div class="sl_fields_wrapper d-flex align-items-center">
                     <div class="slf_title">
@@ -241,11 +245,13 @@
                     <div class="slf_title">
                     </div>
                     <div class="slf_input">
-                      <div class="form-check mt-2">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                      <div class="form-check mt-2 d-flex align-items-center">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckIndeterminate">
                         <label class="form-check-label" for="flexCheckIndeterminate">
                           Accept Offer ?
+                          <span class="introgative_mark">?</span>
                         </label>
+                       
                       </div>
                     </div>
                   </div>
@@ -257,7 +263,9 @@
 
               <!-- add images -->
               <div class="standard_listing_fields mt-4">
-                <h4>Add Images (Max 20)</h4>
+                <div class="creating_listing_form_title_wrapper2">
+                  <h4 class="form-title-sc listing_title_form mb-0">Add Images (Max 20)</h4>
+                </div>
                 <div class="slf_wrapper_width">
                   <div class="sl_fields_wrapper">
                     <div class="upload__box">
@@ -275,7 +283,9 @@
               </div>
               <!-- Shipping -->
               <div class="standard_listing_fields mt-4">
-                <h4>Shipping</h4>
+                <div class="creating_listing_form_title_wrapper2">
+                  <h4 class="form-title-sc listing_title_form mb-0">Shipping</h4>
+                </div>
                 <div class="slf_wrapper_width">
                   <div class="sl_fields_wrapper">
                     <div class="row g-1">
@@ -304,6 +314,7 @@
                       </div>
                       <div class="col-lg-2">
                         <button class="shipping_add_btn">Add</button>
+                        <button class="shipping_add_btn border-0"><span class="introgative_mark">?</span></button>
                       </div>
 
                     </div>
@@ -313,8 +324,10 @@
               </div>
               <!-- Start & Duration -->
               <div class="standard_listing_fields mt-4">
-                <h4>Start and Duration</h4>
-                <div class="slf_wrapper_width">
+                <div class="creating_listing_form_title_wrapper2">
+                  <h4 class="form-title-sc listing_title_form mb-0">Start and Duration</h4>
+                </div>
+                <div class="slf_wrapper_width m-auto">
 
                   <div class="sl_fields_wrapper d-flex align-items-center">
                     <div class="slf_title">
@@ -331,7 +344,7 @@
                       <input type="time" class="slf_form_control slf_form_controlpl-0" placeholder="Time">
                     </div>
                     <div class="slf_input">
-                      <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                      <p class="mb-0">Leave Blank to Start Immediately</p>
                     </div>
                   </div>
 
@@ -355,11 +368,11 @@
 
               </div>
       
-              <div class="creating_listing_form_title_wrapper mt-4">
-                <h4 class="form-title-sc">Additional Fees</h4>
+              <div class="creating_listing_form_title_wrapper2 mt-4">
+                <h4 class="form-title-sc mb-0">Additional Fees</h4>
               </div>
-              <div class="creating_listing_form_title_wrapper">
-                <h4 class="form-title-sc">Post Listing Fee: $0.90</h4>
+              <div class="creating_listing_form_title_wrapper2">
+                <h4 class="form-title-sc mb-0">Post Listing Fee: $0.90 <span class="introgative_mark">?</span></h4>
               </div>
               <div class="form-submit grid-2 mt-4">
                 <button type="button" class="button_bg_white_dflt text-primary" tab-target="step-01"><span><i class="fa-solid fa-angle-left"></i></span> Back</button>

@@ -36,7 +36,7 @@
       <div class="row-wrap">
         <div class="header_logo">
           <a href="index.html">
-            <h1>Auction<span>S</span>ystem</h1>
+           <h1>Auction<span>S</span>ystem</h1>
           </a>
         </div>
         <div class="nav-wrap">
@@ -48,26 +48,26 @@
             <div class="header_searchbar">
               <div id="search-wrapper">
                 <i class="search-icon fas fa-search"></i>
-                <input type="text" id="search" placeholder="Search something here...">
-                <button id="search-button">Search</button>
+                <input type="text" id="search" placeholder="Search something here...!">
+                <!-- <button id="search-button">Search</button> -->
               </div>
             </div>
           </ul>
         </div>
-
+        
         <div class="login_signup_menu">
           <ul class="list-unstyled mb-0">
             <li class="list-inline-item"><a href="#">Login</a></li>
             <li class="list-inline-item"><a href="#">Sign Up</a></li>
           </ul>
         </div>
-
-
-
-
-
-
-
+  
+  
+  
+  
+  
+  
+  
         <div class="h_hamburger">
           <span class="line"></span>
           <span class="line"></span>
@@ -78,6 +78,8 @@
   </header>
   <div class="overlay"></div>
   <!-- ============= Header Area Html Code End ================ -->
+
+
 
 
   <!-- ------------ Invoice Page Html Code Start ------------ -->
@@ -219,12 +221,12 @@
                           </div>
                           <div class="invoice_content ms-4">
                             <ul class="list-unstyled mt-4">
-                              <li><b>Seller:</b> Johann</li>
+                              <li><b>Seller:</b> BobSe</li>
                               <li><b>Invoice Number:</b> 12324</li>
                             </ul>
                             <ul class="list-unstyled mt-4">
                               <li><b>Seller Address</b></li>
-                              <li>Johann</li>
+                              <li>Bob Sellion</li>
                               <li>123 Poppy City</li>
                               <li>South Burlington, VT 45475 US</li>
                             </ul>
@@ -238,22 +240,37 @@
                           </div>
                           <div class="invoice_content ms-4">
                             <ul class="list-unstyled mt-4">
-                              <li><b>Buyer:</b> Johann</li>
+                              <li><b>Buyer:</b> John Doe</li>
                               <li><b>Date Created:</b> 01/27/2024 <span>2:00 AM</span></li>
                             </ul>
                             <ul class="list-unstyled mt-4">
-                              <li><b>Billing Address</b></li>
-                              <li>Johann</li>
-                              <li>123 Poppy City</li>
+                              <div class="invoice_shipping_wrapper d-flex align-items-center">
+                                <div class="label_shipping">
+                                  <h6><b>Billing Address</b>*</h6>
+                                </div>
+                                <div class="shipping_input">
+                                  <div class="slf_input">
+                                    <select class="slf_form_control slf_form_controlpl-0" aria-label="Default select example">
+                                      <option selected disabled>Select</option>
+                                      <option value="1">Uk</option>
+                                      <option value="2">USA</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <li>John Doe</li>
+                              <li>123 Fake Terr</li>
                               <li>South Burlington, VT 45475 US</li>
                             </ul>
+
                             <div class="invoice_shipping_wrapper d-flex align-items-center mt-5">
                               <div class="label_shipping">
                                 <h6><b>Shipping</b>*</h6>
                               </div>
                               <div class="shipping_input">
                                 <div class="slf_input">
-                                  <select class="slf_form_control" aria-label="Default select example">
+                                  <select class="slf_form_control slf_form_controlpl-0" aria-label="Default select example">
                                     <option selected>USPS $16.88</option>
                                     <option value="1">USPS $16.88</option>
                                     <option value="2">USPS $16.88</option>
@@ -270,7 +287,7 @@
                                 </div>
                                 <div class="shipping_input">
                                   <div class="slf_input">
-                                    <select class="slf_form_control" aria-label="Default select example">
+                                    <select class="slf_form_control slf_form_controlpl-0" aria-label="Default select example">
                                       <option selected disabled>Select</option>
                                       <option value="1">Uk</option>
                                       <option value="2">USA</option>
@@ -435,10 +452,10 @@
                         <article>
                           <span>Sort</span>
                           <select name="#" id="#" class="my_form_control">
-                            <option value="small" selected>Newest Purchases</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="extra">Extra Large</option>
+                            <option value="small" selected>End Date, New To Old</option>
+                            <option value="medium">10:00 AM</option>
+                            <option value="large">11:45 PN</option>
+                            <option value="extra">8:00 PM</option>
                           </select>
                         </article>
                       </div>
@@ -455,7 +472,7 @@
                   <div class="invoice_content_wrapper mt-4">
 
                     <div class="won_filter won_views">
-                      <button class="my_form_control">Archive</button>
+                      <button class="my_form_control">Relist</button>
                       <button class="my_form_control">Copy</button>
                       <button class="btn btn-sm btn-danger">Delete</button>
                     </div>
@@ -473,9 +490,9 @@
                             <li>Sale Date/Time (Seller)</li>
                             <li>
                               <ul class="list-unstyled">
-                                <li class="list-inline-item">Quality</li>
-                                <li class="list-inline-item">Unit Price</li>
-                                <li class="list-inline-item">Total Price</li>
+                                <li class="list-inline-item">Number Of Bids</li>
+                                <li class="list-inline-item">Final Price</li>
+                                <li class="list-inline-item">Starting Price</li>
                               </ul>
                             </li>
                           </ul>
@@ -498,7 +515,7 @@
                         </div>
 
                         <div class="p_listing_right_content">
-                          <h6>Mens Designer Stocks (343535)</h6>
+                          <h6>Mens Designer Stocks (343535) <span><i class="fa-solid fa-user"></i></span></h6>
                           <span>01/27/2024 11:30 AM ET</span>
                           <ul class="list-unstyled d-flex justify-content-between">
                             <li>1</li>
@@ -705,10 +722,6 @@
   </section>
 
   <!-- ------------ Invoice Page Html Code Start ------------ -->
-
-
-
-
 
   <!-- =========== Footer Area Html Code Start ========== -->
 
